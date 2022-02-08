@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import { config, createSchema } from '@keystone-next/keystone/schema';
 import { createAuth } from '@keystone-next/auth';
 import {
@@ -8,6 +7,7 @@ import {
 import { User } from './schemas/User';
 import { Product } from './schemas/Product';
 import { ProductImage } from './schemas/ProductImage';
+import 'dotenv/config';
 
 const databaseURL =
   process.env.DATABASE_URL || 'mongodb://localhost/sick-fits-keystone';
@@ -54,7 +54,7 @@ export default withAuth(
         !!session?.data,
     },
     session: withItemData(statelessSessions(sessionConfig), {
-      // QraphQL query
+      // GraphQL query
       User: 'id name email',
     }),
   })
