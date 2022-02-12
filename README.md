@@ -1,5 +1,5 @@
 # Backend (Advanced React)
-Backend for sickfits app from advanced React + GraphQL course by wesbos.
+Backend for sickfits app from advanced React + GraphQL course by wesbos. [Find the frontend repo for this project here](https://github.com/follow-course/frontend-sick-fits-advanced-react).
 
 ## GraphQL intro
 - Query pull data from the API
